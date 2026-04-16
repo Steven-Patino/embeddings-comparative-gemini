@@ -1,0 +1,29 @@
+{
+  "name": "vectorizacion-backend",
+  "version": "1.0.0",
+  "description": "Backend en Express para generar y persistir embeddings de dos modelos de Gemini.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "db:init": "node scripts/initDb.js"
+  },
+  "keywords": [
+    "express",
+    "embeddings",
+    "gemini",
+    "postgres"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^1.50.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.1",
+    "pg": "^8.20.0"
+  }
+}
